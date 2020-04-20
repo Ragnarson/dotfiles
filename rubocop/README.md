@@ -8,20 +8,20 @@ To use this config in your project, you need to inherit it by adding:
 
 ```yaml
 inherit_from:
-  - https://ghcdn.rawgit.org/Ragnarson/dotfiles/master/rubocop/.rubocop.yml
+  - https://raw.githubusercontent.com/Ragnarson/dotfiles/master/rubocop/.rubocop.yml
 
 inherit_mode:
   merge:
     - Exclude
 ```
 
-to your `.rubocop.yml`. It will use [RawGit](https://rawgit.org) CDN. You can also use other CDN providers or store the `.rubocop.yml` on your own server.
+to your `.rubocop.yml`.
 
 After running `rubocop` locally, the inherited (dot)file will be generated. If you don't want to track it with git, add the following to your `.gitignore`:
 
 ```gitignore
 # Ignore Rubocop inherited config
-.rubocop-https---ghcdn-rawgit-org-Ragnarson-dotfiles-master-rubocop--rubocop-yml
+.rubocop-https---raw-githubusercontent-com-Ragnarson-dotfiles-master-rubocop--rubocop-yml
 ```
 
 ## Ruby version
